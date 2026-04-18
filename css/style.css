@@ -399,6 +399,7 @@ p { color: var(--ink-soft); line-height: 1.8; }
 
 /* ---------- SERVICES ---------- */
 .services-list { border-top: 1px solid var(--rule); }
+a.service-row { display: grid; }
 .service-row {
   display: grid;
   grid-template-columns: 80px 1fr auto;
@@ -1189,7 +1190,6 @@ div > .filter-btn { font-family: var(--sans); }
 .container { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
 
 /* Section aliases */
-.section { padding: clamp(4rem, 8vw, 7rem) 0; }
 .section-light { background: var(--stone); }
 .section-header { max-width: 600px; margin: 0 auto 4rem; text-align: center; }
 .section-header h2 { margin-bottom: 1rem; }

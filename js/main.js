@@ -71,10 +71,23 @@ document.addEventListener('DOMContentLoaded', () => {
       const f = btn.dataset.filter;
       document.querySelectorAll('.pitem[data-category]').forEach(item => {
         const show = f === 'all' || f === '*' || item.dataset.category === f;
-        item.style.transition   = 'opacity 0.3s, transform 0.3s';
-        item.style.opacity      = show ? '1' : '0';
-        item.style.transform    = show ? '' : 'scale(0.96)';
-        item.style.pointerEvents = show ? '' : 'none';
+        if (show) {
+          item.style.display = '';
+          requestAnimationFrame(() => requestAnimationFrame(() => {
+            item.style.transition = 'opacity 0.3s, transform 0.3s';
+            item.style.opacity = '1';
+            item.style.transform = '';
+            item.style.pointerEvents = '';
+          }));
+        } else {
+          item.style.transition = 'opacity 0.3s, transform 0.3s';
+          item.style.opacity = '0';
+          item.style.transform = 'scale(0.96)';
+          item.style.pointerEvents = 'none';
+          setTimeout(() => {
+            if (item.style.opacity === '0') item.style.display = 'none';
+          }, 310);
+        }
       });
     });
   });
@@ -106,6 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (modalWrap) {
         modalWrap.classList.add('open');
         document.body.style.overflow = 'hidden';
+        setTimeout(() => modalClose?.focus(), 50);
       }
     });
   });
@@ -116,7 +130,20 @@ document.addEventListener('DOMContentLoaded', () => {
   };
   modalClose?.addEventListener('click', closeModal);
   modalWrap?.addEventListener('click', e => { if (e.target === modalWrap) closeModal(); });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') { closeModal(); return; }
+    if (e.key === 'Tab' && modalWrap?.classList.contains('open')) {
+      const focusable = [...modalWrap.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')].filter(el => el.offsetParent !== null);
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last  = focusable[focusable.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault(); last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault(); first.focus();
+      }
+    }
+  });
 
   /* ----- Contact form ----- */
   const form = document.getElementById('contact-form');
