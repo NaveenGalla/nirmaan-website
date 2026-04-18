@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Sai Nirmaan Architects | Visakhapatnam</title>
+  <meta name="description" content="Get in touch with Sai Nirmaan Architects in Visakhapatnam. Call +91 97042 01438 or fill out our contact form. Free initial consultation for all projects." />
+  <link rel="canonical" href="https://sainirmaan.in/contact.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Sai Nirmaan Architects" />
+  <meta property="og:url" content="https://sainirmaan.in/contact.html" />
+  <meta property="og:title" content="Contact — Sai Nirmaan Architects | Visakhapatnam" />
+  <meta property="og:description" content="Get in touch with Sai Nirmaan Architects in Visakhapatnam. Free initial consultation for all architectural and interior design projects." />
+  <meta property="og:image" content="https://sainirmaan.in/images/architectural/tribal-museum-1.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact — Sai Nirmaan Architects" />
+  <meta name="twitter:description" content="Free initial consultation. We respond to all enquiries within 24 hours." />
+  <meta name="twitter:image" content="https://sainirmaan.in/images/architectural/tribal-museum-1.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .faq-list { display: flex; flex-direction: column; gap: 0; margin-top: 1rem; }
+    .faq-item { border-bottom: 1px solid var(--mid-grey); }
+    .faq-question {
+      width: 100%; background: none; border: none; text-align: left;
+      padding: 1.25rem 0; cursor: pointer; display: flex; justify-content: space-between;
+      align-items: center; font-size: 0.95rem; font-weight: 600; color: var(--charcoal);
+      font-family: var(--font-body);
+    }
+    .faq-question svg { flex-shrink:0; transition: transform 0.3s ease; stroke: var(--orange); }
+    .faq-item.open .faq-question svg { transform: rotate(45deg); }
+    .faq-answer {
+      max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.35s ease;
+      color: var(--charcoal-light); font-size: 0.9rem; line-height: 1.7;
+    }
+    .faq-item.open .faq-answer { max-height: 300px; padding-bottom: 1.25rem; }
+
+    .offices-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .office-card {
+      background: var(--light-grey); border-radius: 8px; padding: 2rem;
+      border-top: 3px solid var(--orange);
+    }
+    .office-card h4 { margin-bottom: 0.75rem; font-size: 1rem; }
+    .office-card p { font-size: 0.88rem; color: var(--charcoal-light); line-height: 1.6; }
+    .office-tag { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--orange); margin-bottom: 0.5rem; }
+
+    @media (max-width: 768px) { .offices-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 1024px) and (min-width: 769px) { .offices-grid { grid-template-columns: 1fr 1fr; } }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar solid" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo/nirmaan-logo.png" alt="Sai Nirmaan Architects Logo" />
+        <div class="nav-logo-text">Sai Nirmaan<span>Architects</span></div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Insights</a></li>
+        <li><a href="contact.html" class="nav-cta active">Get in Touch</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="page-hero" style="padding-bottom:3rem;">
+    <div style="position:absolute;inset:0;background:url('images/architectural/tribal-museum-5.png') center/cover; opacity:0.2;"></div>
+    <div class="page-hero-content container">
+      <span class="section-label" style="display:flex;justify-content:center;margin-bottom:0.75rem;">Contact Us</span>
+      <h1>Let's Talk About Your Project</h1>
+      <p>Free initial consultation. We respond to all enquiries within 24 hours.</p>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span class="breadcrumb-sep">/</span><span>Contact</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- CONTACT GRID -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Info -->
+        <div class="fade-up">
+          <span class="section-label">Get in Touch</span>
+          <h2 style="font-size:1.8rem; margin-bottom:2rem;">We'd Love to Hear From You</h2>
+          <div class="contact-info-block">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 10a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 0h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 7.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <h4>Phone</h4>
+                <a href="tel:+919704201438" style="font-size:0.9rem; color:var(--orange);">+91 97042 01438</a>
+                <p style="font-size:0.82rem; margin-top:0.25rem;">Mon – Sat, 10:00 AM – 6:00 PM IST</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:suresh@sainirmaanarchitects.in" style="font-size:0.9rem; color:var(--orange);">suresh@sainirmaanarchitects.in</a>
+                <p style="font-size:0.82rem; margin-top:0.25rem;">We respond within 24 hours</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h4>Head Office — Visakhapatnam</h4>
+                <p>S-1, 3rd Floor, Srinivasam Apartments,<br/>MVP Sector 3, Visakhapatnam,<br/>Andhra Pradesh — 530017</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+              </div>
+              <div>
+                <h4>Follow Us</h4>
+                <a href="https://www.instagram.com/nirmaanarchitects.india/" target="_blank" rel="noopener" style="font-size:0.9rem; color:var(--orange);">@nirmaanarchitects.india</a>
+                <p style="font-size:0.82rem; margin-top:0.25rem;">See our latest projects on Instagram</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="fade-up">
+          <div style="background:var(--white); border:1px solid var(--mid-grey); border-radius:8px; padding:2.5rem; box-shadow:var(--shadow-sm);">
+            <h3 style="margin-bottom:0.5rem;">Send Us a Message</h3>
+            <p style="font-size:0.88rem; margin-bottom:2rem;">Fill in the form below and we'll respond within one business day.</p>
+            <form id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name *</label>
+                  <input type="text" id="name" name="name" class="form-control" placeholder="e.g. Ravi Sharma" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number *</label>
+                  <input type="tel" id="phone" name="phone" class="form-control" placeholder="+91 98765 43210" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="your@email.com" required />
+              </div>
+              <div class="form-group">
+                <label for="service">Service Required</label>
+                <select id="service" name="service" class="form-control form-select">
+                  <option value="">— Select a Service —</option>
+                  <option>Residential Architecture</option>
+                  <option>Commercial Architecture</option>
+                  <option>Interior Design</option>
+                  <option>Landscape Design</option>
+                  <option>Master Planning</option>
+                  <option>Project Management / Supervision</option>
+                  <option>Design Consultation</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="location">Project Location</label>
+                  <input type="text" id="location" name="location" class="form-control" placeholder="e.g. Visakhapatnam" />
+                </div>
+                <div class="form-group">
+                  <label for="budget">Approximate Budget</label>
+                  <select id="budget" name="budget" class="form-control form-select">
+                    <option value="">— Select Range —</option>
+                    <option>Under ₹20 Lakhs</option>
+                    <option>₹20L – ₹50 Lakhs</option>
+                    <option>₹50L – ₹1 Crore</option>
+                    <option>₹1 Cr – ₹5 Crore</option>
+                    <option>Above ₹5 Crore</option>
+                    <option>Prefer not to say</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Tell Us About Your Project *</label>
+                <textarea id="message" name="message" class="form-control" placeholder="Briefly describe your project, requirements, and timeline..." required></textarea>
+              </div>
+              <div class="form-group" style="display:flex; align-items:flex-start; gap:0.75rem;">
+                <input type="checkbox" id="consent" name="consent" style="margin-top:3px;" required />
+                <label for="consent" style="font-size:0.82rem; color:var(--charcoal-light); cursor:pointer; font-weight:400;">
+                  I agree to be contacted by Sai Nirmaan Architects regarding my enquiry. We never share your information with third parties.
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; margin-top:0.5rem;">
+                Send Enquiry
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFICES -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">Our Office</span>
+        <h2>Find Us</h2>
+        <p>Our studio is based in Visakhapatnam — we work with clients across South India and Odisha.</p>
+      </div>
+      <div class="offices-grid" style="max-width: 420px;">
+        <div class="office-card fade-up">
+          <p class="office-tag">Head Office</p>
+          <h4>Visakhapatnam</h4>
+          <p>S-1, 3rd Floor, Srinivasam Apartments,<br/>MVP Sector 3,<br/>Visakhapatnam, Andhra Pradesh — 530017</p>
+          <p style="margin-top:1rem; color:var(--orange); font-size:0.88rem; font-weight:600;">+91 97042 01438</p>
+          <a href="mailto:suresh@sainirmaanarchitects.in" style="display:block; margin-top:0.5rem; font-size:0.88rem; color:var(--orange);">suresh@sainirmaanarchitects.in</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP PLACEHOLDER -->
+  <div style="background:var(--mid-grey); height:320px; display:flex; align-items:center; justify-content:center; text-align:center;">
+    <div>
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(0,0,0,0.2)" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <p style="color:rgba(0,0,0,0.35); margin-top:1rem; font-size:0.9rem;">Google Maps embed will appear here<br/><small style="font-size:0.78rem;">To add: replace this block with a Google Maps iframe embed for Srinivasam Apartments, MVP Sector 3, Visakhapatnam 530017</small></p>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container" style="max-width:760px;">
+      <div class="section-header fade-up" style="text-align:left; max-width:none; margin-bottom:2rem;">
+        <span class="section-label">FAQ</span>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list fade-up">
+        <div class="faq-item">
+          <button class="faq-question">
+            Do you offer a free initial consultation?
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer">Yes. We offer a complimentary initial consultation — either at our office or on-site — for all new enquiries. This allows us to understand your project requirements and advise on the best approach before any fees are incurred.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            What is the minimum project size you work with?
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer">[PLACEHOLDER — Suresh to confirm minimum project size/budget. Based on portfolio, range appears to be ₹20 Lakhs and above, but this should be confirmed.] We welcome enquiries across a broad range of scales. Get in touch and we'll advise whether your project is a good fit for our practice.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Do you work outside Visakhapatnam?
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer">Yes. We have completed projects across Andhra Pradesh, Telangana, Odisha, and Kerala. We are happy to work anywhere in India for the right project, with site visits scheduled as required.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            How long does a typical architectural project take?
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer">Timelines vary significantly by project type and scale. A residential interior design project may take 3–6 months, while a large commercial or institutional project can span 12–36 months. We'll provide a clear project timeline at the outset, based on your specific requirements.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            How are your fees structured?
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer">Our fees are generally calculated as a percentage of project construction cost, consistent with COA (Council of Architecture) guidelines. For interior design and consultation-only projects, we may offer fixed-fee or hourly arrangements. We'll present a clear fee proposal after the initial consultation.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Can you help with building approvals and permissions?
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer">Yes. We prepare all necessary drawings and documentation for local authority submissions, and liaise with GVMC, VMRDA, and other planning bodies on your behalf. Navigating the approval process is an integral part of our service.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo/nirmaan-logo.png" alt="Sai Nirmaan Architects" />
+          <p>Architecture, Interior Design, Landscape &amp; Master Planning across South India and Odisha.</p>
+        </div>
+        <div class="footer-col"><h5>Navigate</h5><ul>
+          <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Insights</a></li><li><a href="contact.html">Contact</a></li>
+        </ul></div>
+        <div class="footer-col"><h5>Services</h5><ul>
+          <li><a href="services.html#residential">Residential</a></li>
+          <li><a href="services.html#commercial">Commercial</a></li>
+          <li><a href="services.html#interior">Interior Design</a></li>
+          <li><a href="services.html#landscape">Landscape</a></li>
+          <li><a href="services.html#masterplan">Master Planning</a></li>
+        </ul></div>
+        <div class="footer-col"><h5>Contact</h5>
+          <div class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 10a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 0h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 7.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+919704201438">+91 97042 01438</a>
+          </div>
+          <div class="footer-contact-item" style="margin-top:0.5rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:suresh@sainirmaanarchitects.in">suresh@sainirmaanarchitects.in</a>
+          </div>
+          <div class="footer-contact-item" style="margin-top:0.5rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <a href="https://www.instagram.com/nirmaanarchitects.india/" target="_blank" rel="noopener">@nirmaanarchitects.india</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 Sai Nirmaan Architects. All rights reserved.</p></div>
+    </div>
+  </footer>
+  <button class="btt" id="btt" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

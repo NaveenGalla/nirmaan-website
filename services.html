@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Sai Nirmaan Architects | Architecture & Design Services</title>
+  <meta name="description" content="Explore our full range of architectural services: residential design, commercial architecture, interior design, landscape, master planning, and project management across South India." />
+  <link rel="canonical" href="https://sainirmaan.in/services.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Sai Nirmaan Architects" />
+  <meta property="og:url" content="https://sainirmaan.in/services.html" />
+  <meta property="og:title" content="Services — Sai Nirmaan Architects | Architecture & Design" />
+  <meta property="og:description" content="Full-spectrum architectural services: residential design, commercial architecture, interior design, landscape, master planning, and project management across South India." />
+  <meta property="og:image" content="https://sainirmaan.in/images/architectural/tribal-museum-1.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Services — Sai Nirmaan Architects" />
+  <meta name="twitter:description" content="Full-spectrum architectural services across South India — from residential villas to institutional buildings." />
+  <meta name="twitter:image" content="https://sainirmaan.in/images/architectural/tribal-museum-1.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .service-detail-block {
+      display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; align-items: center;
+      padding: 5rem 0;
+      border-bottom: 1px solid var(--mid-grey);
+    }
+    .service-detail-block:last-of-type { border-bottom: none; }
+    .service-detail-block.reverse { direction: rtl; }
+    .service-detail-block.reverse > * { direction: ltr; }
+    .service-detail-image {
+      border-radius: 8px; overflow: hidden; box-shadow: var(--shadow-md);
+      aspect-ratio: 4/3;
+    }
+    .service-detail-image img { width: 100%; height: 100%; object-fit: cover; }
+    .service-detail-content {}
+    .service-number {
+      font-family: var(--font-heading); font-size: 4rem; font-weight: 900;
+      color: var(--mid-grey); line-height: 1; margin-bottom: 0.5rem;
+    }
+    .service-detail-content h2 { margin-bottom: 1rem; }
+    .service-detail-content p { margin-bottom: 1rem; }
+    .service-includes {
+      margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.6rem;
+    }
+    .service-includes li {
+      display: flex; align-items: flex-start; gap: 0.75rem;
+      font-size: 0.9rem; color: var(--charcoal-light);
+    }
+    .service-includes li::before {
+      content: ''; display: block; width: 6px; height: 6px;
+      border-radius: 50%; background: var(--orange);
+      flex-shrink: 0; margin-top: 0.55rem;
+    }
+
+    /* Process */
+    .process-steps {
+      display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; position: relative;
+    }
+    .process-steps::before {
+      content: ''; position: absolute; top: 28px; left: 10%; right: 10%;
+      height: 2px; background: var(--mid-grey); z-index: 0;
+    }
+    .process-step { text-align: center; padding: 0 1rem; position: relative; z-index: 1; }
+    .step-number {
+      width: 56px; height: 56px; border-radius: 50%; background: var(--white);
+      border: 2px solid var(--orange); display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700; color: var(--orange);
+      margin: 0 auto 1.25rem;
+    }
+    .process-step h4 { font-size: 0.95rem; margin-bottom: 0.5rem; }
+    .process-step p { font-size: 0.82rem; }
+
+    @media (max-width: 1024px) {
+      .service-detail-block { grid-template-columns: 1fr; gap: 2rem; }
+      .service-detail-block.reverse { direction: ltr; }
+      .process-steps { grid-template-columns: 1fr 1fr; gap: 2rem; }
+      .process-steps::before { display: none; }
+    }
+    @media (max-width: 480px) {
+      .process-steps { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar solid" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo/nirmaan-logo.png" alt="Sai Nirmaan Architects Logo" />
+        <div class="nav-logo-text">Sai Nirmaan<span>Architects</span></div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Insights</a></li>
+        <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div style="position:absolute;inset:0;background:url('images/architectural/indoor-stadium-side.png') center/cover; opacity:0.2;"></div>
+    <div class="page-hero-content container">
+      <span class="section-label" style="display:flex;justify-content:center;margin-bottom:0.75rem;">Services</span>
+      <h1>End-to-End Architectural Services</h1>
+      <p>From the first sketch to the final handover — we manage every stage of your project.</p>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span class="breadcrumb-sep">/</span><span>Services</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- SERVICES DETAIL -->
+  <section class="section">
+    <div class="container">
+
+      <!-- 1. Residential -->
+      <div class="service-detail-block fade-up" id="residential">
+        <div class="service-detail-content">
+          <div class="service-number">01</div>
+          <span class="section-label">Residential Architecture</span>
+          <h2>Homes Designed Around How You Live</h2>
+          <p>Every home we design begins with a conversation about life — how your family moves, gathers, rests, and grows. We translate this understanding into architecture that is beautiful, functional, and uniquely yours.</p>
+          <p>We work with individual homeowners, developers, and housing societies across Visakhapatnam, Hyderabad, Vijayawada, and Odisha — from single villas to multi-unit residential complexes.</p>
+          <ul class="service-includes">
+            <li>Site analysis and feasibility assessment</li>
+            <li>Concept design and schematic plans</li>
+            <li>Detailed architectural drawings and specifications</li>
+            <li>Interior architecture integration</li>
+            <li>Structural coordination and services integration</li>
+            <li>Liaison with local planning authorities</li>
+            <li>Construction supervision and quality oversight</li>
+          </ul>
+        </div>
+        <div class="service-detail-image">
+          <img src="images/architectural/mr-bhaskar-srikakulam.png" alt="Residential villa design Srikakulam" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- 2. Commercial -->
+      <div class="service-detail-block reverse fade-up" id="commercial">
+        <div class="service-detail-content">
+          <div class="service-number">02</div>
+          <span class="section-label">Commercial Architecture</span>
+          <h2>Buildings That Work Hard — and Look the Part</h2>
+          <p>Commercial buildings are a brand in physical form. Whether it's a corporate office, a healthcare facility, or a retail environment, we design spaces that communicate your organisation's identity while maximising operational performance.</p>
+          <p>We have experience working with corporate clients including India Bulls Housing Finance, Clove Dental, and institutional bodies across the region.</p>
+          <ul class="service-includes">
+            <li>Commercial office and co-working spaces</li>
+            <li>Healthcare and clinical environments</li>
+            <li>Retail and hospitality design</li>
+            <li>Educational and institutional buildings</li>
+            <li>Industrial and mixed-use developments</li>
+            <li>Brand-aligned architectural identity</li>
+          </ul>
+        </div>
+        <div class="service-detail-image">
+          <img src="images/architectural/gj-medical-elevation.png" alt="GJ Medical Centre commercial architecture" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- 3. Interior -->
+      <div class="service-detail-block fade-up" id="interior">
+        <div class="service-detail-content">
+          <div class="service-number">03</div>
+          <span class="section-label">Interior Architecture</span>
+          <h2>Interiors That Elevate Everyday Life</h2>
+          <p>We approach interior design as a natural extension of architecture — not an afterthought. Every material, every light source, every detail of joinery contributes to a coherent spatial experience that feels intentional from the moment you walk in.</p>
+          <p>Our interior portfolio spans luxury residential apartments, dental clinics, restaurants, and corporate offices across Hyderabad, Visakhapatnam, and Andhra Pradesh.</p>
+          <ul class="service-includes">
+            <li>Residential interior design (apartments, villas, penthouses)</li>
+            <li>Commercial interiors (offices, clinics, restaurants)</li>
+            <li>Custom furniture and joinery design</li>
+            <li>Lighting design and specification</li>
+            <li>Material and finish selection</li>
+            <li>3D visualisation and render packages</li>
+            <li>Coordination with contractors and vendors</li>
+          </ul>
+        </div>
+        <div class="service-detail-image">
+          <img src="images/interior/the-regent-main.jpg" alt="Luxury residential interior design Hyderabad" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- 4. Landscape -->
+      <div class="service-detail-block reverse fade-up" id="landscape">
+        <div class="service-detail-content">
+          <div class="service-number">04</div>
+          <span class="section-label">Landscape Design</span>
+          <h2>Outdoor Spaces That Complete the Picture</h2>
+          <p>Great buildings deserve great surroundings. Our landscape design practice creates outdoor environments — from intimate private gardens to large public spaces — that complement the built form and enhance the lives of those who use them.</p>
+          <p>We have designed landscape schemes for government institutions (GVMC, Police Department), private developers (Swathi Promoters), and healthcare campuses (KIMS Hospitals).</p>
+          <ul class="service-includes">
+            <li>Residential garden and courtyard design</li>
+            <li>Campus and institutional landscape planning</li>
+            <li>Public realm and streetscape design</li>
+            <li>Planting design with native species</li>
+            <li>Water features and hardscape design</li>
+            <li>Irrigation and maintenance planning</li>
+          </ul>
+        </div>
+        <div class="service-detail-image" style="background:var(--charcoal); display:flex; align-items:center; justify-content:center;">
+          <div style="text-align:center; padding:2rem;">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <p style="color:rgba(255,255,255,0.3); font-size:0.85rem; margin-top:1rem;">Landscape project<br/>photos coming soon</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Master Planning -->
+      <div class="service-detail-block fade-up" id="masterplan">
+        <div class="service-detail-content">
+          <div class="service-number">05</div>
+          <span class="section-label">Master Planning</span>
+          <h2>Shaping Entire Communities and Campuses</h2>
+          <p>Master planning is architecture at its most ambitious scale — designing not just buildings but the movement, organisation, and long-term evolution of entire developments. With an M.Plan background, Suresh leads our urban planning and campus design capability.</p>
+          <p>Our work includes the Indoor Sports Stadium at Atchutapuram (SAAP), the Indoor Sports Stadium in Calicut, and township planning across AP.</p>
+          <ul class="service-includes">
+            <li>Residential township and colony planning</li>
+            <li>Sports and recreational complex master plans</li>
+            <li>Campus design (educational, institutional)</li>
+            <li>Mixed-use development zoning and phasing</li>
+            <li>Traffic, movement, and infrastructure planning</li>
+            <li>Environmental impact integration</li>
+          </ul>
+        </div>
+        <div class="service-detail-image">
+          <img src="images/architectural/indoor-stadium-front.png" alt="Indoor sports stadium master planning" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- 6. Project Management -->
+      <div class="service-detail-block reverse fade-up" id="pm">
+        <div class="service-detail-content">
+          <div class="service-number">06</div>
+          <span class="section-label">Project Management</span>
+          <h2>Your Project, Delivered as Designed</h2>
+          <p>Good design is only as good as its execution. We offer comprehensive project management and construction supervision — ensuring the quality, intent, and detail of the design are faithfully realised on site.</p>
+          <p>For clients who require it, we act as the single point of accountability across all disciplines — managing contractors, consultants, and authorities so you don't have to.</p>
+          <ul class="service-includes">
+            <li>Construction documentation and specifications</li>
+            <li>Tender management and contractor selection</li>
+            <li>Site supervision and quality control</li>
+            <li>Milestone-based project tracking</li>
+            <li>Budget and cost management</li>
+            <li>Authority liaison and approvals</li>
+            <li>Handover and post-completion support</li>
+          </ul>
+        </div>
+        <div class="service-detail-image">
+          <img src="images/architectural/tribal-museum-5.png" alt="Architecture project supervision" loading="lazy" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">How We Work</span>
+        <h2>Our Design Process</h2>
+        <p>A structured approach that keeps you informed, in control, and excited at every stage.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step fade-up">
+          <div class="step-number">1</div>
+          <h4>Discover</h4>
+          <p>We listen first — understanding your brief, your site, your budget, and your vision before a single line is drawn.</p>
+        </div>
+        <div class="process-step fade-up">
+          <div class="step-number">2</div>
+          <h4>Concept</h4>
+          <p>We develop design concepts and present them for your feedback — exploring options, testing ideas, and refining direction.</p>
+        </div>
+        <div class="process-step fade-up">
+          <div class="step-number">3</div>
+          <h4>Design</h4>
+          <p>Approved concepts are developed into detailed architectural drawings, 3D renders, and full specifications.</p>
+        </div>
+        <div class="process-step fade-up">
+          <div class="step-number">4</div>
+          <h4>Deliver</h4>
+          <p>We oversee construction, coordinate with contractors, and ensure the built result matches the design intent.</p>
+        </div>
+        <div class="process-step fade-up">
+          <div class="step-number">5</div>
+          <h4>Handover</h4>
+          <p>We walk you through the completed project, address any snagging, and ensure you're fully satisfied before handover.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-band">
+    <div class="container">
+      <h2>Ready to Discuss Your Project?</h2>
+      <p>Every project is unique. Let's talk about what you need — free initial consultation, no commitment required.</p>
+      <a href="contact.html" class="btn btn-outline">Book a Free Consultation</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo/nirmaan-logo.png" alt="Sai Nirmaan Architects" />
+          <p>Architecture, Interior Design, Landscape &amp; Master Planning across South India and Odisha.</p>
+        </div>
+        <div class="footer-col"><h5>Navigate</h5><ul>
+          <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Insights</a></li><li><a href="contact.html">Contact</a></li>
+        </ul></div>
+        <div class="footer-col"><h5>Services</h5><ul>
+          <li><a href="#residential">Residential</a></li>
+          <li><a href="#commercial">Commercial</a></li>
+          <li><a href="#interior">Interior Design</a></li>
+          <li><a href="#landscape">Landscape</a></li>
+          <li><a href="#masterplan">Master Planning</a></li>
+          <li><a href="#pm">Project Management</a></li>
+        </ul></div>
+        <div class="footer-col"><h5>Contact</h5>
+          <div class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 10a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 0h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 7.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+91 97042 01438</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:suresh@sainirmaanarchitects.in">suresh@sainirmaanarchitects.in</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 Sai Nirmaan Architects. All rights reserved.</p></div>
+    </div>
+  </footer>
+  <button class="btt" id="btt" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="js/main.js"></script>
+</body>
+</html>

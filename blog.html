@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insights — Sai Nirmaan Architects | Architecture & Design Blog</title>
+  <meta name="description" content="Architecture insights, design thinking, and industry perspectives from the team at Sai Nirmaan Architects, Visakhapatnam." />
+  <link rel="canonical" href="https://sainirmaan.in/blog.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Sai Nirmaan Architects" />
+  <meta property="og:url" content="https://sainirmaan.in/blog.html" />
+  <meta property="og:title" content="Insights — Sai Nirmaan Architects | Architecture & Design Blog" />
+  <meta property="og:description" content="Architecture insights, design thinking, and industry perspectives from the team at Sai Nirmaan Architects, Visakhapatnam." />
+  <meta property="og:image" content="https://sainirmaan.in/images/architectural/tribal-museum-1.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Insights — Sai Nirmaan Architects Blog" />
+  <meta name="twitter:description" content="Architecture insights, design thinking, and industry perspectives from Visakhapatnam's leading architecture practice." />
+  <meta name="twitter:image" content="https://sainirmaan.in/images/architectural/tribal-museum-1.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .blog-hero-post {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+      border-radius: 8px; overflow: hidden; box-shadow: var(--shadow-md);
+      margin-bottom: 3.5rem;
+    }
+    .blog-hero-img { aspect-ratio: 4/3; overflow: hidden; }
+    .blog-hero-img img { width: 100%; height: 100%; object-fit: cover; }
+    .blog-hero-content {
+      background: var(--charcoal); padding: 3rem;
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .blog-hero-content .blog-tag { color: var(--orange); }
+    .blog-hero-content h2 { color: var(--white); font-size: 1.6rem; margin: 0.75rem 0; }
+    .blog-hero-content p { color: rgba(255,255,255,0.7); margin-bottom: 1.5rem; }
+    .blog-hero-content .blog-meta { color: rgba(255,255,255,0.45); border-top-color: rgba(255,255,255,0.1); }
+
+    .newsletter-box {
+      background: var(--light-grey); border-radius: 8px; padding: 2.5rem;
+      text-align: center; border: 1px solid var(--mid-grey);
+    }
+    .newsletter-box h3 { margin-bottom: 0.75rem; }
+    .newsletter-box p { font-size: 0.9rem; margin-bottom: 1.5rem; }
+    .newsletter-form { display: flex; gap: 0.75rem; max-width: 480px; margin: 0 auto; }
+    .newsletter-form input { flex: 1; padding: 0.8rem 1rem; border: 1.5px solid var(--mid-grey); border-radius: var(--radius); font-family: var(--font-body); font-size: 0.9rem; }
+    .newsletter-form input:focus { outline: none; border-color: var(--orange); }
+
+    @media (max-width: 768px) {
+      .blog-hero-post { grid-template-columns: 1fr; }
+      .blog-hero-img { aspect-ratio: 16/9; }
+      .blog-hero-content { padding: 2rem; }
+      .newsletter-form { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar solid" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo/nirmaan-logo.png" alt="Sai Nirmaan Architects Logo" />
+        <div class="nav-logo-text">Sai Nirmaan<span>Architects</span></div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html" class="active">Insights</a></li>
+        <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div style="position:absolute;inset:0;background:url('images/interior/the-regent-main.jpg') center/cover; opacity:0.2;"></div>
+    <div class="page-hero-content container">
+      <span class="section-label" style="display:flex;justify-content:center;margin-bottom:0.75rem;">Insights</span>
+      <h1>Design Thinking &amp; Perspectives</h1>
+      <p>Ideas, observations, and expertise from the Sai Nirmaan team on architecture, design, and the built environment.</p>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span class="breadcrumb-sep">/</span><span>Insights</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- Featured Article -->
+      <div class="blog-hero-post fade-up">
+        <div class="blog-hero-img">
+          <img src="images/architectural/tribal-museum-1.png" alt="Architecture for social good" loading="lazy" />
+        </div>
+        <div class="blog-hero-content">
+          <p class="blog-tag">Featured · Thought Leadership</p>
+          <h2>Building for the Margins: Architecture as a Tool for Social Change</h2>
+          <p>Our work with UNDP, UNICEF, and Save the Children on disaster-relief housing taught us that the most important client is often the community — and that constraints, far from limiting design, can reveal its truest purpose.</p>
+          <div class="blog-meta">
+            <span>Suresh Kumar Bandaru</span><span>·</span><span>April 2026</span><span>·</span><span>7 min read</span>
+          </div>
+          <a href="blog/architecture-for-social-good.html" class="btn btn-primary" style="margin-top:1.5rem; align-self:flex-start;">Read Article</a>
+        </div>
+      </div>
+
+      <!-- Blog Grid -->
+      <div class="blog-grid">
+        <a href="blog/designing-for-the-coast.html" class="blog-card fade-up">
+          <div class="blog-thumb">
+            <img src="images/architectural/mr-bhaskar-srikakulam.png" alt="Coastal architecture Andhra Pradesh" loading="lazy" />
+          </div>
+          <div class="blog-body">
+            <p class="blog-tag">Architecture · Residential</p>
+            <h3>Designing for Coastal Andhra: Climate, Context &amp; Character</h3>
+            <p>Passive design, material durability, and cultural sensitivity — how we approach residential design along Andhra Pradesh's coastline.</p>
+            <div class="blog-meta">
+              <span>Suresh Kumar Bandaru</span><span>·</span><span>5 min read</span>
+            </div>
+          </div>
+        </a>
+        <a href="blog/small-spaces-big-ideas.html" class="blog-card fade-up">
+          <div class="blog-thumb">
+            <img src="images/interior/the-regent-main.jpg" alt="Interior design small spaces Hyderabad" loading="lazy" />
+          </div>
+          <div class="blog-body">
+            <p class="blog-tag">Interior Design</p>
+            <h3>Small Spaces, Big Ideas: Maximising Urban Apartments in Hyderabad</h3>
+            <p>Urban apartments are shrinking. Here's how smart planning, material selection, and lighting can make any flat feel generous and liveable.</p>
+            <div class="blog-meta">
+              <span>Sai Nirmaan Architects</span><span>·</span><span>6 min read</span>
+            </div>
+          </div>
+        </a>
+        <a href="blog/architecture-for-social-good.html" class="blog-card fade-up">
+          <div class="blog-thumb">
+            <img src="images/architectural/indoor-stadium-front.png" alt="Institutional architecture India" loading="lazy" />
+          </div>
+          <div class="blog-body">
+            <p class="blog-tag">Thought Leadership · CSR</p>
+            <h3>Building for the Margins: Architecture as a Tool for Social Change</h3>
+            <p>Lessons from our humanitarian design work with UNDP, UNICEF, and Save the Children in coastal Andhra Pradesh.</p>
+            <div class="blog-meta">
+              <span>Suresh Kumar Bandaru</span><span>·</span><span>7 min read</span>
+            </div>
+          </div>
+        </a>
+        <!-- Placeholders for future posts -->
+        <div class="blog-card fade-up" style="opacity:0.6; pointer-events:none;">
+          <div class="blog-thumb" style="background:var(--mid-grey); display:flex;align-items:center;justify-content:center;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(0,0,0,0.15)" stroke-width="1.5"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <div class="blog-body">
+            <p class="blog-tag">Coming Soon</p>
+            <h3>The Future of Architecture in Tier-2 Cities: Visakhapatnam's Moment</h3>
+            <p>Infrastructure investment, IT expansion, and a growing middle class are reshaping how Visakhapatnam builds and lives.</p>
+            <div class="blog-meta"><span>Sai Nirmaan Architects</span><span>·</span><span>Coming Soon</span></div>
+          </div>
+        </div>
+        <div class="blog-card fade-up" style="opacity:0.6; pointer-events:none;">
+          <div class="blog-thumb" style="background:var(--mid-grey); display:flex;align-items:center;justify-content:center;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(0,0,0,0.15)" stroke-width="1.5"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <div class="blog-body">
+            <p class="blog-tag">Coming Soon</p>
+            <h3>Biophilic Design: Why Bringing Nature Indoors is More Than a Trend</h3>
+            <p>How incorporating natural light, plants, and natural materials into architecture improves wellbeing and reduces stress.</p>
+            <div class="blog-meta"><span>Sai Nirmaan Architects</span><span>·</span><span>Coming Soon</span></div>
+          </div>
+        </div>
+        <div class="blog-card fade-up" style="opacity:0.6; pointer-events:none;">
+          <div class="blog-thumb" style="background:var(--mid-grey); display:flex;align-items:center;justify-content:center;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(0,0,0,0.15)" stroke-width="1.5"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <div class="blog-body">
+            <p class="blog-tag">Coming Soon</p>
+            <h3>Renovation vs. Rebuild: A Practical Guide for Homeowners in AP</h3>
+            <p>When does it make sense to renovate your existing home — and when should you start fresh? Our guide for homeowners in Andhra Pradesh.</p>
+            <div class="blog-meta"><span>Sai Nirmaan Architects</span><span>·</span><span>Coming Soon</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="newsletter-box fade-up" style="margin-top:4rem;">
+        <h3>Stay Inspired</h3>
+        <p>Get our latest articles and design insights delivered to your inbox — no more than once a month.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); this.innerHTML='<p style=&quot;color:var(--orange);font-weight:600;&quot;>Thank you! You\'re on the list.</p>'">
+          <input type="email" placeholder="your@email.com" required />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo/nirmaan-logo.png" alt="Sai Nirmaan Architects" />
+          <p>Architecture, Interior Design, Landscape &amp; Master Planning across South India and Odisha.</p>
+        </div>
+        <div class="footer-col"><h5>Navigate</h5><ul>
+          <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Insights</a></li><li><a href="contact.html">Contact</a></li>
+        </ul></div>
+        <div class="footer-col"><h5>Articles</h5><ul>
+          <li><a href="blog/designing-for-the-coast.html">Coastal Architecture</a></li>
+          <li><a href="blog/small-spaces-big-ideas.html">Small Space Design</a></li>
+          <li><a href="blog/architecture-for-social-good.html">Architecture for Social Good</a></li>
+        </ul></div>
+        <div class="footer-col"><h5>Contact</h5>
+          <div class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 10a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 0h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 7.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+91 97042 01438</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 Sai Nirmaan Architects. All rights reserved.</p></div>
+    </div>
+  </footer>
+  <button class="btt" id="btt" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="js/main.js"></script>
+</body>
+</html>
