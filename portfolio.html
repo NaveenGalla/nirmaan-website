@@ -26,20 +26,19 @@
 <body>
 
 <!-- Navigation -->
-<nav class="nav solid" id="nav">
-    <div class="wrap">
-        <div class="nav-brand">
-            <a href="index.html">
-                <img src="images/logo/nirmaan-logo.png" alt="Sai Nirmaan Architects">
-            </a>
-        </div>
-        <ul class="nav-menu" id="navLinks">
+<nav class="navbar solid" id="nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+            <img src="images/logo/nirmaan-logo.png" alt="Sai Nirmaan Architects Logo" />
+            <div class="nav-logo-text">Sai Nirmaan<span>Architects</span></div>
+        </a>
+        <ul class="nav-links" id="navLinks">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="portfolio.html" class="active">Portfolio</a></li>
             <li><a href="blog.html">Insights</a></li>
-            <li><a href="contact.html" class="nav-enquire">Get in touch</a></li>
+            <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
         </ul>
         <button class="hamburger" id="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
     </div>
@@ -89,13 +88,13 @@
         <!-- Portfolio Grid -->
         <div class="pgrid">
             <!-- Row 1 -->
-            <div class="pitem wide tall fade-in" data-category="cultural" data-title="Tribal Museum" data-tag="Cultural" data-location="President's Village, Visakhapatnam" data-type="Cultural Institution" data-area="4,500 sqm" data-year="2023" data-status="Completed" data-desc="A landmark cultural museum celebrating tribal heritage and craftsmanship." style="background-image: url('images/architectural/tribal-museum-1.png'); cursor: pointer;">
+            <div class="pitem wide tall fade-in" data-category="cultural" data-title="Tribal Museum" data-tag="Cultural" data-location="President's Village, Visakhapatnam" data-type="Cultural Institution" data-area="4,500 sqm" data-year="2023" data-status="Completed" data-desc="A landmark cultural museum celebrating tribal heritage and craftsmanship." data-gallery="images/architectural/tribal-museum-1.png|images/architectural/tribal-museum-2.png|images/architectural/tribal-museum-3.png|images/architectural/tribal-museum-4.png|images/architectural/tribal-museum-5.png" style="background-image: url('images/architectural/tribal-museum-1.png'); cursor: pointer;">
                 <div class="pitem-info">
                     <span class="pitem-tag">Cultural</span>
                     <h3>Tribal Museum</h3>
                 </div>
             </div>
-            <div class="pitem tall fade-in" data-category="institutional" data-title="Indoor Stadium" data-tag="Institutional" data-location="Atchutapuram, Visakhapatnam" data-type="Sports Facility" data-area="12,000 sqm" data-year="2023" data-status="Completed" data-desc="Multi-purpose indoor sports complex for SAAP." style="background-image: url('images/architectural/indoor-stadium-front.png'); cursor: pointer;">
+            <div class="pitem tall fade-in" data-category="institutional" data-title="Indoor Stadium" data-tag="Institutional" data-location="Atchutapuram, Visakhapatnam" data-type="Sports Facility" data-area="12,000 sqm" data-year="2023" data-status="Completed" data-desc="Multi-purpose indoor sports complex for SAAP." data-gallery="images/architectural/indoor-stadium-front.png|images/architectural/indoor-stadium-side.png|images/architectural/indoor-stadium-elevation.png" style="background-image: url('images/architectural/indoor-stadium-front.png'); cursor: pointer;">
                 <div class="pitem-info">
                     <span class="pitem-tag">Institutional</span>
                     <h3>Indoor Stadium</h3>
@@ -103,7 +102,7 @@
             </div>
 
             <!-- Row 2 -->
-            <div class="pitem wide fade-in" data-category="interior" data-title="The Regent" data-tag="Interior" data-location="Visakhapatnam" data-type="Interior Design" data-area="2,000 sqm" data-year="2022" data-status="Completed" data-desc="Luxury residential interior with contemporary elegance." style="background-image: url('images/interior/the-regent-main.jpg'); cursor: pointer;">
+            <div class="pitem wide fade-in" data-category="interior" data-title="The Regent" data-tag="Interior" data-location="Visakhapatnam" data-type="Interior Design" data-area="2,000 sqm" data-year="2022" data-status="Completed" data-desc="Luxury residential interior with contemporary elegance." data-gallery="images/interior/the-regent-main.jpg|images/interior/the-regent-1.jpg|images/interior/the-regent-2.jpg|images/interior/the-regent-3.jpg|images/interior/the-regent-4.jpg|images/interior/the-regent-5.jpg|images/interior/the-regent-6.jpg|images/interior/the-regent-7.jpg|images/interior/the-regent-8.jpg" style="background-image: url('images/interior/the-regent-main.jpg'); cursor: pointer;">
                 <div class="pitem-info">
                     <span class="pitem-tag">Interior</span>
                     <h3>The Regent</h3>
@@ -117,7 +116,7 @@
             </div>
 
             <!-- Row 3 -->
-            <div class="pitem fade-in" data-category="interior" data-title="Harish Rajam Lounge" data-tag="Interior" data-location="Visakhapatnam" data-type="Interior Design" data-area="400 sqm" data-year="2021" data-status="Completed" data-desc="Contemporary lounge space with warm aesthetics." style="background-image: url('images/interior/harish-rajam-lounge.png'); cursor: pointer;">
+            <div class="pitem fade-in" data-category="interior" data-title="Harish Rajam Lounge" data-tag="Interior" data-location="Visakhapatnam" data-type="Interior Design" data-area="400 sqm" data-year="2021" data-status="Completed" data-desc="Contemporary lounge space with warm aesthetics." data-gallery="images/interior/harish-rajam-lounge.png|images/interior/harish-rajam-hall.png|images/interior/harish-rajam-bedroom.png" style="background-image: url('images/interior/harish-rajam-lounge.png'); cursor: pointer;">
                 <div class="pitem-info">
                     <span class="pitem-tag">Interior</span>
                     <h3>Lounge Design</h3>
@@ -129,7 +128,7 @@
                     <h3>GJ Medical</h3>
                 </div>
             </div>
-            <div class="pitem fade-in" data-category="cultural" data-title="Tribal Museum Detail" data-tag="Cultural" data-location="President's Village, Visakhapatnam" data-type="Cultural Institution" data-area="4,500 sqm" data-year="2023" data-status="Completed" data-desc="Architectural detail of the Tribal Museum." style="background-image: url('images/architectural/tribal-museum-2.png'); cursor: pointer;">
+            <div class="pitem fade-in" data-category="cultural" data-title="Tribal Museum Detail" data-tag="Cultural" data-location="President's Village, Visakhapatnam" data-type="Cultural Institution" data-area="4,500 sqm" data-year="2023" data-status="Completed" data-desc="Architectural detail of the Tribal Museum." data-gallery="images/architectural/tribal-museum-1.png|images/architectural/tribal-museum-2.png|images/architectural/tribal-museum-3.png|images/architectural/tribal-museum-4.png|images/architectural/tribal-museum-5.png" style="background-image: url('images/architectural/tribal-museum-2.png'); cursor: pointer;">
                 <div class="pitem-info">
                     <span class="pitem-tag">Cultural</span>
                     <h3>Museum Interior</h3>
@@ -137,7 +136,7 @@
             </div>
 
             <!-- Row 4 -->
-            <div class="pitem wide fade-in" data-category="interior" data-title="The Regent Room 1" data-tag="Interior" data-location="Visakhapatnam" data-type="Interior Design" data-area="2,000 sqm" data-year="2022" data-status="Completed" data-desc="Bedroom suite with luxury finishes." style="background-image: url('images/interior/the-regent-1.jpg'); cursor: pointer;">
+            <div class="pitem wide fade-in" data-category="interior" data-title="The Regent Room 1" data-tag="Interior" data-location="Visakhapatnam" data-type="Interior Design" data-area="2,000 sqm" data-year="2022" data-status="Completed" data-desc="Bedroom suite with luxury finishes." data-gallery="images/interior/the-regent-main.jpg|images/interior/the-regent-1.jpg|images/interior/the-regent-2.jpg|images/interior/the-regent-3.jpg|images/interior/the-regent-4.jpg|images/interior/the-regent-5.jpg|images/interior/the-regent-6.jpg|images/interior/the-regent-7.jpg|images/interior/the-regent-8.jpg" style="background-image: url('images/interior/the-regent-1.jpg'); cursor: pointer;">
                 <div class="pitem-info">
                     <span class="pitem-tag">Interior</span>
                     <h3>Bedroom Suite</h3>
@@ -151,19 +150,19 @@
             </div>
 
             <!-- Row 5 -->
-            <div class="pitem fade-in" data-category="interior" data-title="Harish Bedroom" data-tag="Interior" data-location="Visakhapatnam" data-type="Interior Design" data-area="350 sqm" data-year="2020" data-status="Completed" data-desc="Serene bedroom with natural materials." style="background-image: url('images/interior/harish-rajam-bedroom.png'); cursor: pointer;">
+            <div class="pitem fade-in" data-category="interior" data-title="Harish Bedroom" data-tag="Interior" data-location="Visakhapatnam" data-type="Interior Design" data-area="350 sqm" data-year="2020" data-status="Completed" data-desc="Serene bedroom with natural materials." data-gallery="images/interior/harish-rajam-lounge.png|images/interior/harish-rajam-hall.png|images/interior/harish-rajam-bedroom.png" style="background-image: url('images/interior/harish-rajam-bedroom.png'); cursor: pointer;">
                 <div class="pitem-info">
                     <span class="pitem-tag">Interior</span>
                     <h3>Bedroom Space</h3>
                 </div>
             </div>
-            <div class="pitem fade-in" data-category="institutional" data-title="Indoor Stadium Elevation" data-tag="Institutional" data-location="Atchutapuram, Visakhapatnam" data-type="Sports Facility" data-area="12,000 sqm" data-year="2023" data-status="Completed" data-desc="Elevation view of the sports facility." style="background-image: url('images/architectural/indoor-stadium-elevation.png'); cursor: pointer;">
+            <div class="pitem fade-in" data-category="institutional" data-title="Indoor Stadium Elevation" data-tag="Institutional" data-location="Atchutapuram, Visakhapatnam" data-type="Sports Facility" data-area="12,000 sqm" data-year="2023" data-status="Completed" data-desc="Elevation view of the sports facility." data-gallery="images/architectural/indoor-stadium-front.png|images/architectural/indoor-stadium-side.png|images/architectural/indoor-stadium-elevation.png" style="background-image: url('images/architectural/indoor-stadium-elevation.png'); cursor: pointer;">
                 <div class="pitem-info">
                     <span class="pitem-tag">Institutional</span>
                     <h3>Stadium Elevation</h3>
                 </div>
             </div>
-            <div class="pitem fade-in" data-category="cultural" data-title="Tribal Museum Scene" data-tag="Cultural" data-location="President's Village, Visakhapatnam" data-type="Cultural Institution" data-area="4,500 sqm" data-year="2023" data-status="Completed" data-desc="Interior perspective of the museum space." style="background-image: url('images/architectural/tribal-museum-3.png'); cursor: pointer;">
+            <div class="pitem fade-in" data-category="cultural" data-title="Tribal Museum Scene" data-tag="Cultural" data-location="President's Village, Visakhapatnam" data-type="Cultural Institution" data-area="4,500 sqm" data-year="2023" data-status="Completed" data-desc="Interior perspective of the museum space." data-gallery="images/architectural/tribal-museum-1.png|images/architectural/tribal-museum-2.png|images/architectural/tribal-museum-3.png|images/architectural/tribal-museum-4.png|images/architectural/tribal-museum-5.png" style="background-image: url('images/architectural/tribal-museum-3.png'); cursor: pointer;">
                 <div class="pitem-info">
                     <span class="pitem-tag">Cultural</span>
                     <h3>Museum Space</h3>
@@ -171,13 +170,13 @@
             </div>
 
             <!-- Row 6 -->
-            <div class="pitem wide fade-in" data-category="interior" data-title="The Regent Room 2" data-tag="Interior" data-location="Visakhapatnam" data-type="Interior Design" data-area="2,000 sqm" data-year="2022" data-status="Completed" data-desc="Living room with bespoke furnishings." style="background-image: url('images/interior/the-regent-2.jpg'); cursor: pointer;">
+            <div class="pitem wide fade-in" data-category="interior" data-title="The Regent Room 2" data-tag="Interior" data-location="Visakhapatnam" data-type="Interior Design" data-area="2,000 sqm" data-year="2022" data-status="Completed" data-desc="Living room with bespoke furnishings." data-gallery="images/interior/the-regent-main.jpg|images/interior/the-regent-1.jpg|images/interior/the-regent-2.jpg|images/interior/the-regent-3.jpg|images/interior/the-regent-4.jpg|images/interior/the-regent-5.jpg|images/interior/the-regent-6.jpg|images/interior/the-regent-7.jpg|images/interior/the-regent-8.jpg" style="background-image: url('images/interior/the-regent-2.jpg'); cursor: pointer;">
                 <div class="pitem-info">
                     <span class="pitem-tag">Interior</span>
                     <h3>Living Space</h3>
                 </div>
             </div>
-            <div class="pitem fade-in" data-category="interior" data-title="Harish Hall" data-tag="Interior" data-location="Visakhapatnam" data-type="Interior Design" data-area="500 sqm" data-year="2020" data-status="Completed" data-desc="Grand hall with architectural character." style="background-image: url('images/interior/harish-rajam-hall.png'); cursor: pointer;">
+            <div class="pitem fade-in" data-category="interior" data-title="Harish Hall" data-tag="Interior" data-location="Visakhapatnam" data-type="Interior Design" data-area="500 sqm" data-year="2020" data-status="Completed" data-desc="Grand hall with architectural character." data-gallery="images/interior/harish-rajam-lounge.png|images/interior/harish-rajam-hall.png|images/interior/harish-rajam-bedroom.png" style="background-image: url('images/interior/harish-rajam-hall.png'); cursor: pointer;">
                 <div class="pitem-info">
                     <span class="pitem-tag">Interior</span>
                     <h3>Grand Hall</h3>
@@ -291,22 +290,30 @@
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
   </button>
 
-<!-- Portfolio Modal -->
-<div class="modal-wrap" id="modal">
-    <div class="modal" style="position:relative;">
-        <button class="modal-close" id="modalClose">✕</button>
-        <img src="" alt="" class="modal-img" id="modalImg" />
-        <div class="modal-body">
+<!-- Gallery Modal -->
+<div class="modal-wrap" id="modal" role="dialog" aria-modal="true" aria-label="Project gallery">
+    <button class="modal-close" id="modalClose" aria-label="Close gallery">✕</button>
+    <div class="modal-gallery" id="modalGallery">
+        <button class="modal-nav modal-prev" id="modalPrev" aria-label="Previous image">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="modal-nav modal-next" id="modalNext" aria-label="Next image">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="modal-counter" id="modalCounter">1 / 1</div>
+    </div>
+    <div class="modal-body">
+        <div class="modal-body-main">
             <p class="pitem-tag" id="modalTag"></p>
             <h3 id="modalTitle"></h3>
             <p class="modal-location" id="modalLocation"></p>
             <p class="modal-desc" id="modalDesc"></p>
-            <div class="modal-specs">
-                <div class="mspec"><div class="mspec-label">Type</div><div class="mspec-value" id="mType"></div></div>
-                <div class="mspec"><div class="mspec-label">Area</div><div class="mspec-value" id="mArea"></div></div>
-                <div class="mspec"><div class="mspec-label">Year</div><div class="mspec-value" id="mYear"></div></div>
-                <div class="mspec"><div class="mspec-label">Status</div><div class="mspec-value" id="mStatus"></div></div>
-            </div>
+        </div>
+        <div class="modal-specs">
+            <div class="mspec"><div class="mspec-label">Type</div><div class="mspec-value" id="mType"></div></div>
+            <div class="mspec"><div class="mspec-label">Area</div><div class="mspec-value" id="mArea"></div></div>
+            <div class="mspec"><div class="mspec-label">Year</div><div class="mspec-value" id="mYear"></div></div>
+            <div class="mspec"><div class="mspec-label">Status</div><div class="mspec-value" id="mStatus"></div></div>
         </div>
     </div>
 </div>
