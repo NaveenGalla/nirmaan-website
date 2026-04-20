@@ -1,0 +1,24 @@
+Sai Nirmaan Architects Website Update Summary (as of April 20, 2026)
+
+Completed Tasks:
+1. Updated terminology and statistics across all main HTML files (standardized to "Architecture, Interior, Landscape", updated statistics, removed "Master Planning").
+2. Updated all service names and removed/added as per MoM.
+3. Updated Our Practice and Services sections in about.html and services.html.
+4. Replaced portfolio thumbnail for Pristine-508 — The Regent, Serlingampalli with the 7th image.
+5. Updated Featured Project (Tribal Museum) and Coming Soon section project names as per MoM.
+6. Masked registration numbers in About page and updated education details (now unmasked and updated with full credentials as per latest CV).
+7. Updated Milestones section and corrected IIID Vizag Chapter to IIID Vizag Centre.
+8. Added new SEO keywords to meta tags in index.html and services.html.
+9. Updated Get In Touch and Footer with Hyderabad branch office address and Google Maps placeholder.
+
+
+Newly Completed:
+10. Updated Principal Architect section in about.html with new CV content, credentials, memberships, awards, and design philosophy for Suresh Kumar Bandaru. Headshot placeholder added.
+
+Pending Tasks:
+1. Update Social Impact section with new terminology/content if required (awaiting further details or confirmation).
+2. Replace images with updated assets from Google Drive (JK Paper Mills, 3F oil forms, new interior/landscape images, etc.).
+
+If you have the updated images or further content (CV, team details, Google Maps links), please provide them to complete the remaining tasks.
+
+— Website update log by GitHub Copilot (GPT-4.1)
