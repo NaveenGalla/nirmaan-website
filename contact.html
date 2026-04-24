@@ -11,11 +11,11 @@
   <meta property="og:url" content="https://sainirmaan.in/contact.html" />
   <meta property="og:title" content="Contact — Sai Nirmaan Architects | Visakhapatnam" />
   <meta property="og:description" content="Get in touch with Sai Nirmaan Architects in Visakhapatnam. Free initial consultation for all architectural and interior design projects." />
-  <meta property="og:image" content="https://sainirmaan.in/images/architectural/tribal-museum-1.png" />
+  <meta property="og:image" content="https://sainirmaan.in/images/architectural/mr-bhaskar-srikakulam.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Contact — Sai Nirmaan Architects" />
   <meta name="twitter:description" content="Free initial consultation. We respond to all enquiries within 24 hours." />
-  <meta name="twitter:image" content="https://sainirmaan.in/images/architectural/tribal-museum-1.png" />
+  <meta name="twitter:image" content="https://sainirmaan.in/images/architectural/mr-bhaskar-srikakulam.jpg" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="images/logo/nirmaan-logo.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -47,7 +47,7 @@
     .office-card p { font-size: 0.88rem; color: var(--charcoal-light); line-height: 1.6; }
     .office-tag { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--orange); margin-bottom: 0.5rem; }
 
-    @media (max-width: 768px) { .offices-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 768px) { .offices-grid { grid-template-columns: 1fr; } .maps-grid { grid-template-columns: 1fr !important; height: auto !important; } .maps-grid > div { height: 240px; } }
     @media (max-width: 1024px) and (min-width: 769px) { .offices-grid { grid-template-columns: 1fr 1fr; } }
   </style>
 </head>
@@ -73,7 +73,7 @@
   </nav>
 
   <div class="page-hero" style="padding-bottom:3rem;">
-    <div style="position:absolute;inset:0;background:url('images/architectural/tribal-museum-5.png') center/cover; opacity:0.2;"></div>
+    <div style="position:absolute;inset:0;background:url('images/architectural/tribal-museum-5.jpg') center/cover; opacity:0.2;"></div>
     <div class="page-hero-content container">
       <span class="section-label" style="display:flex;justify-content:center;margin-bottom:0.75rem;">Contact Us</span>
       <h1>Let's Talk About Your Project</h1>
@@ -249,11 +249,25 @@
     </div>
   </section>
 
-  <!-- MAP PLACEHOLDER -->
-  <div style="background:var(--mid-grey); height:320px; display:flex; align-items:center; justify-content:center; text-align:center;">
-    <div>
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(0,0,0,0.2)" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-      <p style="color:rgba(0,0,0,0.35); margin-top:1rem; font-size:0.9rem;">Google Maps embed will appear here<br/><small style="font-size:0.78rem;">To add: replace this block with a Google Maps iframe embed for Srinivasam Apartments, MVP Sector 3, Visakhapatnam 530017 and 6-81/1, Tellapur HUDA Colony, Hyderabad 502032</small></p>
+  <!-- MAPS -->
+  <div class="maps-grid" style="display:grid; grid-template-columns:1fr 1fr; height:360px;">
+    <div style="position:relative; overflow:hidden;">
+      <p style="position:absolute; top:12px; left:12px; z-index:1; background:white; padding:4px 10px; border-radius:4px; font-size:0.78rem; font-weight:600; color:var(--ink); margin:0; box-shadow:0 1px 6px rgba(0,0,0,0.15);">Visakhapatnam</p>
+      <iframe
+        title="Sai Nirmaan Architects Visakhapatnam Office"
+        src="https://maps.google.com/maps?q=MVP+Sector+3+Visakhapatnam+530017&output=embed"
+        width="100%" height="100%" style="border:0; display:block;" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <div style="position:relative; overflow:hidden;">
+      <p style="position:absolute; top:12px; left:12px; z-index:1; background:white; padding:4px 10px; border-radius:4px; font-size:0.78rem; font-weight:600; color:var(--ink); margin:0; box-shadow:0 1px 6px rgba(0,0,0,0.15);">Hyderabad</p>
+      <iframe
+        title="Sai Nirmaan Architects Hyderabad Branch"
+        src="https://maps.google.com/maps?q=Tellapur+HUDA+Colony+Hyderabad+502032&output=embed"
+        width="100%" height="100%" style="border:0; display:block;" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </div>
   </div>
 

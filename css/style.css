@@ -259,20 +259,7 @@ p { color: var(--ink-soft); line-height: 1.8; }
   overflow: hidden;
   background: var(--ink);
 }
-.hero-media {
-  position: absolute;
-  inset: 0;
-  background-image: url('../images/architectural/tribal-museum-1.png');
-  background-size: cover;
-  background-position: center 30%;
-  opacity: 0.42;
-  transform: scale(1.04);
-  will-change: transform;
-}
 @keyframes heroScale { to { transform: scale(1.09); } }
-@media (prefers-reduced-motion: no-preference) {
-  .hero-media { animation: heroScale 25s ease-in-out infinite alternate; }
-}
 
 .hero-content {
   position: relative;
@@ -1381,7 +1368,7 @@ textarea.form-control { min-height: 120px; resize: vertical; }
    ============================================================ */
 
 /* Hero — lift image opacity for better presence */
-.hero-media { opacity: 0.52; }
+.hero-slide.active { opacity: 0.52; }
 
 /* Hero headline — subtle text-shadow for legibility over busy images */
 .hero h1 {

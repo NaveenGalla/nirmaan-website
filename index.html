@@ -11,19 +11,57 @@
   <meta property="og:description" content="Architecture, Interior, Landscape — Visakhapatnam. Led by Suresh Kumar Bandaru with 15+ years across South India and Odisha. 300+ Projects. 4+ States." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://sainirmaan.in/" />
-  <meta property="og:image" content="https://sainirmaan.in/images/architectural/tribal-museum-1.png" />
+  <meta property="og:image" content="https://sainirmaan.in/images/architectural/tribal-museum-1.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Sai Nirmaan Architects — Architecture & Design" />
   <meta name="twitter:description" content="Full-spectrum Architecture, Interior, Landscape practice in Visakhapatnam. 300+ Projects. 15+ Years. 4+ States." />
-  <meta name="twitter:image" content="https://sainirmaan.in/images/architectural/tribal-museum-1.png" />
+  <meta name="twitter:image" content="https://sainirmaan.in/images/architectural/tribal-museum-1.jpg" />
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="images/logo/nirmaan-logo.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="preload" as="image" href="images/architectural/tribal-museum-1.png" />
+  <link rel="preload" as="image" href="images/interior/pristine-508-regent-hero.jpg" />
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .hero-slides { position: absolute; inset: 0; }
+    .hero-slide {
+      position: absolute; inset: 0;
+      background-size: cover; background-position: center 30%;
+      opacity: 0; transition: opacity 1.4s ease;
+      transform: scale(1.04); will-change: transform;
+    }
+    .hero-slide.active { opacity: 0.42; }
+    @media (prefers-reduced-motion: no-preference) {
+      .hero-slide.active { animation: heroScale 25s ease-in-out infinite alternate; }
+    }
+    .hero-progress {
+      position: absolute; top: 0; left: 0; height: 2px;
+      background: var(--orange); z-index: 6; width: 0%; pointer-events: none;
+    }
+    .hero-dots {
+      position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+      display: flex; gap: 10px; z-index: 5;
+    }
+    .hero-dot {
+      width: 8px; height: 8px; border-radius: 50%; border: none; cursor: pointer;
+      background: rgba(255,255,255,0.35); padding: 0;
+      transition: background 0.3s, transform 0.3s;
+    }
+    .hero-dot.active { background: var(--orange); transform: scale(1.3); }
+    .hero-arrow {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      z-index: 5; background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.2); color: #fff;
+      width: 40px; height: 40px; border-radius: 50%;
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s; font-size: 1rem;
+    }
+    .hero-arrow:hover { background: rgba(255,255,255,0.18); }
+    .hero-prev { left: 1.5rem; }
+    .hero-next { right: 1.5rem; }
+  </style>
 
   <script type="application/ld+json">
   {
@@ -67,7 +105,21 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero">
-  <div class="hero-media"></div>
+  <div class="hero-progress" id="heroProgress"></div>
+  <div class="hero-slides" aria-hidden="true">
+    <div class="hero-slide active" style="background-image:url('images/interior/pristine-508-regent-hero.jpg'); background-position: center center;"></div>
+    <div class="hero-slide" style="background-image:url('images/interior/govind-lmn-hero.jpg'); background-position: center center;"></div>
+    <div class="hero-slide" style="background-image:url('images/architectural/tribal-museum-1.jpg'); background-position: center 40%;"></div>
+    <div class="hero-slide" style="background-image:url('images/architectural/indoor-stadium-front.jpg'); background-position: center 30%;"></div>
+  </div>
+  <button class="hero-arrow hero-prev" aria-label="Previous slide" onclick="heroPrev()">&#8592;</button>
+  <button class="hero-arrow hero-next" aria-label="Next slide" onclick="heroNext()">&#8594;</button>
+  <div class="hero-dots">
+    <button class="hero-dot active" aria-label="Slide 1" onclick="heroGoTo(0)"></button>
+    <button class="hero-dot" aria-label="Slide 2" onclick="heroGoTo(1)"></button>
+    <button class="hero-dot" aria-label="Slide 3" onclick="heroGoTo(2)"></button>
+    <button class="hero-dot" aria-label="Slide 4" onclick="heroGoTo(3)"></button>
+  </div>
   <div class="hero-content wrap">
     <p class="hero-label">Visakhapatnam · Hyderabad · Vijayawada · Odisha</p>
     <h1>We Build Spaces<br/>That <em>Endure</em></h1>
@@ -212,8 +264,8 @@
         data-location="Odisha" data-type="Cultural / Institutional"
         data-area="4,500 sqm" data-year="2023" data-status="Design Proposal 2023"
         data-desc="A landmark cultural project celebrating tribal heritage. Interlocking pavilions guide visitors through an immersive narrative drawn from local materials and traditional motifs."
-        data-gallery="images/architectural/tribal-museum-1.png|images/architectural/tribal-museum-2.png|images/architectural/tribal-museum-3.png|images/architectural/tribal-museum-4.png|images/architectural/tribal-museum-5.png">
-        <img src="images/architectural/tribal-museum-1.png" alt="Tribal Museum President's Village" loading="lazy" />
+        data-gallery="images/architectural/tribal-museum-1.jpg|images/architectural/tribal-museum-2.jpg|images/architectural/tribal-museum-3.jpg|images/architectural/tribal-museum-4.jpg|images/architectural/tribal-museum-5.jpg">
+        <img src="images/architectural/tribal-museum-1.jpg" alt="Tribal Museum President's Village" loading="lazy" />
         <div class="pitem-info">
           <p class="pitem-tag">Cultural · Architecture</p>
           <h3>Tribal Museum — President's Village</h3>
@@ -227,8 +279,8 @@
         data-location="Visakhapatnam District, AP" data-type="Sports / Institutional"
         data-area="12,000 sqm" data-year="2023" data-status="Design Complete"
         data-desc="A large-scale indoor sports facility for the Sports Authority of Andhra Pradesh — prioritising natural ventilation, clear-span structure, and civic presence."
-        data-gallery="images/architectural/indoor-stadium-front.png|images/architectural/indoor-stadium-side.png|images/architectural/indoor-stadium-elevation.png">
-        <img src="images/architectural/indoor-stadium-front.png" alt="Indoor Stadium Atchutapuram" loading="lazy" />
+        data-gallery="images/architectural/indoor-stadium-front.jpg|images/architectural/indoor-stadium-side.jpg|images/architectural/indoor-stadium-elevation.jpg">
+        <img src="images/architectural/indoor-stadium-front.jpg" alt="Indoor Stadium Atchutapuram" loading="lazy" />
         <div class="pitem-info">
           <p class="pitem-tag">Institutional · Sports</p>
           <h3>Indoor Stadium — Atchutapuram</h3>
@@ -257,7 +309,7 @@
         data-location="Srikakulam, Andhra Pradesh" data-type="Residential Villa"
         data-area="850 sqm" data-year="2020" data-status="Completed"
         data-desc="A contemporary coastal villa in Srikakulam — bold horizontal planes, generous overhangs, and a composition that draws from Andhra's vernacular without imitation.">
-        <img src="images/architectural/mr-bhaskar-srikakulam.png" alt="Mr Bhaskar Villa Srikakulam" loading="lazy" />
+        <img src="images/architectural/mr-bhaskar-srikakulam.jpg" alt="Mr Bhaskar Villa Srikakulam" loading="lazy" />
         <div class="pitem-info">
           <p class="pitem-tag">Architectural · Residential</p>
           <h3>Villa — Mr. Bhaskar</h3>
@@ -271,8 +323,8 @@
         data-location="Rajam, Andhra Pradesh" data-type="Residential Interior"
         data-area="400 sqm" data-year="2025" data-status="Design Complete"
         data-desc="Full residential interior in Rajam — warm neutral palette, rich wood tones, and carefully layered lighting across all living zones."
-        data-gallery="images/interior/harish-rajam-lounge.png|images/interior/harish-rajam-hall.png|images/interior/harish-rajam-bedroom.png">
-        <img src="images/interior/harish-rajam-lounge.png" alt="Mr Harish Rajam interior" loading="lazy" />
+        data-gallery="images/interior/harish-rajam-lounge.jpg|images/interior/harish-rajam-hall.jpg|images/interior/harish-rajam-bedroom.jpg">
+        <img src="images/interior/harish-rajam-lounge.jpg" alt="Mr Harish Rajam interior" loading="lazy" />
         <div class="pitem-info">
           <p class="pitem-tag">Interior · Residential</p>
           <h3>Residence — Mr. Harish, Rajam</h3>
@@ -286,7 +338,7 @@
         data-location="Gajuwaka, Visakhapatnam" data-type="Healthcare / Commercial"
         data-area="3,200 sqm" data-year="2019" data-status="Design Complete"
         data-desc="A clinical centre in Gajuwaka with clean contemporary lines — maximising natural light while meeting strict functional requirements for a modern healthcare environment.">
-        <img src="images/architectural/gj-medical-elevation.png" alt="GJ Medical Centre elevation" loading="lazy" />
+        <img src="images/architectural/gj-medical-elevation.jpg" alt="GJ Medical Centre elevation" loading="lazy" />
         <div class="pitem-info">
           <p class="pitem-tag">Architectural · Healthcare</p>
           <h3>GJ Medical Centre</h3>
@@ -300,7 +352,7 @@
 <!-- ============ FEATURED PROJECT ============ -->
 <div class="feature-strip">
   <div class="feature-image">
-    <img src="images/architectural/tribal-museum-3.png" alt="Tribal Museum exterior approach" loading="lazy" />
+    <img src="images/architectural/tribal-museum-3.jpg" alt="Tribal Museum exterior approach" loading="lazy" />
   </div>
   <div class="feature-body">
     <span class="eyebrow" style="color:rgba(255,160,60,0.8);">Featured Project</span>
@@ -450,7 +502,7 @@
     <div class="blog-grid-el fade-in">
       <a href="blog/designing-for-the-coast.html" class="bcard">
         <div class="bcard-thumb">
-          <img src="images/architectural/mr-bhaskar-srikakulam.png" alt="Coastal architecture Andhra Pradesh" loading="lazy" />
+          <img src="images/architectural/mr-bhaskar-srikakulam.jpg" alt="Coastal architecture Andhra Pradesh" loading="lazy" />
         </div>
         <div class="bcard-body">
           <p class="bcard-tag">Architecture · Residential</p>
@@ -478,7 +530,7 @@
       </a>
       <a href="blog/architecture-for-social-good.html" class="bcard">
         <div class="bcard-thumb">
-          <img src="images/architectural/tribal-museum-1.png" alt="Architecture for social good" loading="lazy" />
+          <img src="images/architectural/tribal-museum-1.jpg" alt="Architecture for social good" loading="lazy" />
         </div>
         <div class="bcard-body">
           <p class="bcard-tag">Thought Leadership · CSR</p>
@@ -607,5 +659,43 @@
 </div>
 
 <script src="js/main.js"></script>
+<script>
+(function(){
+  var slides = document.querySelectorAll('.hero-slide');
+  var dots   = document.querySelectorAll('.hero-dot');
+  var bar    = document.getElementById('heroProgress');
+  var DURATION = 6000;
+  var current = 0, timer, rafId, startTime;
+
+  function goTo(n) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = (n + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+    resetProgress();
+  }
+
+  function resetProgress() {
+    clearTimeout(timer);
+    cancelAnimationFrame(rafId);
+    bar.style.width = '0%';
+    startTime = performance.now();
+    function step(now) {
+      var pct = Math.min((now - startTime) / DURATION * 100, 100);
+      bar.style.width = pct + '%';
+      if (pct < 100) rafId = requestAnimationFrame(step);
+    }
+    rafId = requestAnimationFrame(step);
+    timer = setTimeout(function(){ goTo(current + 1); }, DURATION);
+  }
+
+  window.heroPrev  = function(){ goTo(current - 1); };
+  window.heroNext  = function(){ goTo(current + 1); };
+  window.heroGoTo  = goTo;
+
+  resetProgress();
+})();
+</script>
 </body>
 </html>
