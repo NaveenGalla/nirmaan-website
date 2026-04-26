@@ -146,6 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('modalTitle').textContent    = d.title    || '';
       document.getElementById('modalLocation').textContent = d.location || '';
       document.getElementById('modalDesc').textContent     = d.desc     || '';
+      document.getElementById('mClient').textContent       = d.client   || '—';
       document.getElementById('mType').textContent         = d.type     || '—';
       document.getElementById('mArea').textContent         = d.area     || '—';
       document.getElementById('mYear').textContent         = d.year     || '—';
@@ -238,16 +239,28 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       if (!allValid) return;
       const btn  = form.querySelector('[type="submit"]');
-      const orig = btn.textContent;
+      const orig = btn.innerHTML;
       btn.textContent = 'Sending…';
       btn.disabled    = true;
-      setTimeout(() => {
-        showNotif("Thank you — your message has been received. We'll be in touch within 24 hours.", 'success');
-        form.reset();
-        form.querySelectorAll('.form-group').forEach(g => g.classList.remove('has-error'));
-        btn.textContent = orig;
-        btn.disabled    = false;
-      }, 1400);
+      const data = new FormData(form);
+      fetch('https://api.web3forms.com/submit', { method: 'POST', body: data })
+        .then(r => r.json())
+        .then(res => {
+          if (res.success) {
+            showNotif("Thank you — your message has been received. We'll be in touch within 24 hours.", 'success');
+            form.reset();
+            form.querySelectorAll('.form-group').forEach(g => g.classList.remove('has-error'));
+          } else {
+            showNotif('Something went wrong. Please email us directly at suresh@sainirmaanarchitects.in', 'error');
+          }
+        })
+        .catch(() => {
+          showNotif('Could not send message. Please email us directly at suresh@sainirmaanarchitects.in', 'error');
+        })
+        .finally(() => {
+          btn.innerHTML = orig;
+          btn.disabled  = false;
+        });
     });
   }
 

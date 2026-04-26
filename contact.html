@@ -47,8 +47,10 @@
     .office-card p { font-size: 0.88rem; color: var(--charcoal-light); line-height: 1.6; }
     .office-tag { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--orange); margin-bottom: 0.5rem; }
 
-    @media (max-width: 768px) { .offices-grid { grid-template-columns: 1fr; } .maps-grid { grid-template-columns: 1fr !important; height: auto !important; } .maps-grid > div { height: 240px; } }
-    @media (max-width: 1024px) and (min-width: 769px) { .offices-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 768px) {
+      .offices-grid { grid-template-columns: 1fr; }
+      .offices-map-grid { grid-template-columns: 1fr !important; }
+    }
   </style>
 </head>
 <body>
@@ -128,7 +130,7 @@
               </div>
               <div>
                 <h4>Branch Office — Hyderabad</h4>
-                <p>6-81/1, Patemeti Chandraih Nilayan,<br/>Tellapur HUDA Colony, Near Allwyn Space Station,<br/>Hyderabad, Telangana — 502032</p>
+                <p>6-81/1, Patemeti Chandraih Nilayan,<br/>Tellapur HUDA Colony, Near Alien Space Station,<br/>Hyderabad, Telangana — 502032</p>
               </div>
             </div>
             <div class="contact-item">
@@ -150,6 +152,12 @@
             <h3 style="margin-bottom:0.5rem;">Send Us a Message</h3>
             <p style="font-size:0.88rem; margin-bottom:2rem;">Fill in the form below and we'll respond within one business day.</p>
             <form id="contact-form" novalidate>
+              <!-- Web3Forms: replace YOUR_ACCESS_KEY after signing up at web3forms.com -->
+              <input type="hidden" name="access_key" value="1a945192-1a7b-4cfa-86b4-092bcca3427e" />
+              <input type="hidden" name="subject" value="New Enquiry — Sai Nirmaan Architects" />
+              <input type="hidden" name="from_name" value="Sai Nirmaan Website" />
+              <input type="hidden" name="redirect" value="false" />
+              <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off" />
               <div class="form-row">
                 <div class="form-group">
                   <label for="name">Your Name *</label>
@@ -157,8 +165,8 @@
                   <p class="field-error"></p>
                 </div>
                 <div class="form-group">
-                  <label for="phone">Phone Number *</label>
-                  <input type="tel" id="phone" name="phone" class="form-control" placeholder="+91 98765 43210" required />
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" class="form-control" placeholder="+91 98765 43210" />
                   <p class="field-error"></p>
                 </div>
               </div>
@@ -222,54 +230,69 @@
     </div>
   </section>
 
-  <!-- OFFICES -->
+  <!-- OFFICES + MAPS -->
   <section class="section section-light">
     <div class="container">
       <div class="section-header fade-up">
-        <span class="section-label">Our Office</span>
+        <span class="section-label">Our Offices</span>
         <h2>Find Us</h2>
-        <p>Our studio is based in Visakhapatnam — we work with clients across South India and Odisha.</p>
+        <p>Two studios — Visakhapatnam and Hyderabad — serving clients across South India and Odisha.</p>
       </div>
-      <div class="offices-grid" style="max-width: 420px;">
-        <div class="office-card fade-up">
-          <p class="office-tag">Head Office</p>
-          <h4>Visakhapatnam</h4>
-          <p>S-1, 3rd Floor, Srinivasam Apartments,<br/>MVP Sector 3,<br/>Visakhapatnam, Andhra Pradesh — 530017</p>
-          <p style="margin-top:1rem; color:var(--orange); font-size:0.88rem; font-weight:600;">+91 97042 01438</p>
-          <a href="mailto:suresh@sainirmaanarchitects.in" style="display:block; margin-top:0.5rem; font-size:0.88rem; color:var(--orange);">suresh@sainirmaanarchitects.in</a>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem;" class="offices-map-grid fade-up">
+
+        <!-- Visakhapatnam -->
+        <div style="display:flex; flex-direction:column; gap:0; border-radius:8px; overflow:hidden; box-shadow:0 2px 16px rgba(0,0,0,0.08);">
+          <div style="background:white; padding:1.75rem 2rem; border-top:3px solid var(--orange);">
+            <p style="font-size:0.7rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--orange); margin:0 0 0.4rem 0;">Head Office</p>
+            <h4 style="margin:0 0 0.75rem 0; font-size:1.1rem;">Visakhapatnam</h4>
+            <p style="font-size:0.88rem; color:var(--charcoal-light); line-height:1.6; margin:0 0 1rem 0;">
+              S-1, 3rd Floor, Srinivasam Apartments,<br/>
+              MVP Sector 3, Visakhapatnam,<br/>
+              Andhra Pradesh — 530017
+            </p>
+            <a href="tel:+919704201438" style="display:inline-flex; align-items:center; gap:0.4rem; font-size:0.88rem; font-weight:600; color:var(--orange); text-decoration:none;">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 10a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 0h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 7.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +91 97042 01438
+            </a>
+          </div>
+          <div style="flex:1; min-height:280px;">
+            <iframe
+              title="Sai Nirmaan Architects Visakhapatnam Office"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.0373535692725!2d83.32805968235986!3d17.742879049184392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39430025cf49ef%3A0x3f8a0bb340df859!2sSrinivasam!5e0!3m2!1sen!2sin!4v1777162532948!5m2!1sen!2sin"
+              width="100%" height="100%" style="border:0; display:block; min-height:280px;" loading="lazy"
+              allowfullscreen referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
         </div>
-        <div class="office-card fade-up">
-          <p class="office-tag">Branch Office</p>
-          <h4>Hyderabad</h4>
-          <p>6-81/1, Patemeti Chandraih Nilayan,<br/>Tellapur HUDA Colony, Near Allwyn Space Station,<br/>Hyderabad, Telangana — 502032</p>
-          <p style="margin-top:1rem; color:var(--orange); font-size:0.88rem; font-weight:600;">+91 97042 01438</p>
-          <a href="mailto:suresh@sainirmaanarchitects.in" style="display:block; margin-top:0.5rem; font-size:0.88rem; color:var(--orange);">suresh@sainirmaanarchitects.in</a>
+
+        <!-- Hyderabad -->
+        <div style="display:flex; flex-direction:column; gap:0; border-radius:8px; overflow:hidden; box-shadow:0 2px 16px rgba(0,0,0,0.08);">
+          <div style="background:white; padding:1.75rem 2rem; border-top:3px solid var(--orange);">
+            <p style="font-size:0.7rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--orange); margin:0 0 0.4rem 0;">Branch Office</p>
+            <h4 style="margin:0 0 0.75rem 0; font-size:1.1rem;">Hyderabad</h4>
+            <p style="font-size:0.88rem; color:var(--charcoal-light); line-height:1.6; margin:0 0 1rem 0;">
+              6-81/1, Patemeti Chandraih Nilayan,<br/>
+              Tellapur HUDA Colony,<br/>
+              Hyderabad, Telangana — 502032
+            </p>
+            <a href="tel:+919704201438" style="display:inline-flex; align-items:center; gap:0.4rem; font-size:0.88rem; font-weight:600; color:var(--orange); text-decoration:none;">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 10a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 0h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 7.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +91 97042 01438
+            </a>
+          </div>
+          <div style="flex:1; min-height:280px;">
+            <iframe
+              title="Sai Nirmaan Architects Hyderabad Branch"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.004792233835!2d78.29188720931026!3d17.464485831393237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbed225730d00b%3A0x69bf659cf720534c!2sTellapur%20-%20Patimedi%20Chandriah%20Nilayam!5e0!3m2!1sen!2sin!4v1777162405382!5m2!1sen!2sin"
+              width="100%" height="100%" style="border:0; display:block; min-height:280px;" loading="lazy"
+              allowfullscreen referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
-
-  <!-- MAPS -->
-  <div class="maps-grid" style="display:grid; grid-template-columns:1fr 1fr; height:360px;">
-    <div style="position:relative; overflow:hidden;">
-      <p style="position:absolute; top:12px; left:12px; z-index:1; background:white; padding:4px 10px; border-radius:4px; font-size:0.78rem; font-weight:600; color:var(--ink); margin:0; box-shadow:0 1px 6px rgba(0,0,0,0.15);">Visakhapatnam</p>
-      <iframe
-        title="Sai Nirmaan Architects Visakhapatnam Office"
-        src="https://maps.google.com/maps?q=MVP+Sector+3+Visakhapatnam+530017&output=embed"
-        width="100%" height="100%" style="border:0; display:block;" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
-    <div style="position:relative; overflow:hidden;">
-      <p style="position:absolute; top:12px; left:12px; z-index:1; background:white; padding:4px 10px; border-radius:4px; font-size:0.78rem; font-weight:600; color:var(--ink); margin:0; box-shadow:0 1px 6px rgba(0,0,0,0.15);">Hyderabad</p>
-      <iframe
-        title="Sai Nirmaan Architects Hyderabad Branch"
-        src="https://maps.google.com/maps?q=Tellapur+HUDA+Colony+Hyderabad+502032&output=embed"
-        width="100%" height="100%" style="border:0; display:block;" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
-  </div>
 
   <!-- FAQ -->
   <section class="section">
@@ -379,7 +402,7 @@
         </div>
         <div class="footer-contact-row">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span>6-81/1, Patemeti Chandraih Nilayan, Tellapur HUDA Colony,<br/>Near Allwyn Space Station, Hyderabad, Telangana — 502032</span>
+          <span>6-81/1, Patemeti Chandraih Nilayan, Tellapur HUDA Colony,<br/>Near Alien Space Station, Hyderabad, Telangana — 502032</span>
         </div>
       </div>
     </div>
