@@ -251,11 +251,11 @@ document.addEventListener('DOMContentLoaded', () => {
             form.reset();
             form.querySelectorAll('.form-group').forEach(g => g.classList.remove('has-error'));
           } else {
-            showNotif('Something went wrong. Please email us directly at suresh@sainirmaanarchitects.in', 'error');
+            showNotif('Something went wrong. Please email us directly at suresh@sainirmaanarchitects.com', 'error');
           }
         })
         .catch(() => {
-          showNotif('Could not send message. Please email us directly at suresh@sainirmaanarchitects.in', 'error');
+          showNotif('Could not send message. Please email us directly at suresh@sainirmaanarchitects.com', 'error');
         })
         .finally(() => {
           btn.innerHTML = orig;
