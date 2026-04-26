@@ -775,7 +775,8 @@ a.service-row { display: grid; }
   transform: scale(1.04);
 }
 .page-hero-content { position: relative; z-index: 1; }
-.page-hero h1 { color: var(--white); margin-bottom: 1rem; }
+.page-hero h1 { color: var(--white); margin-bottom: 1rem; word-break: break-word; overflow-wrap: break-word; }
+.page-hero p, .page-hero .hero-sub { color: rgba(255,255,255,0.85); }
 .page-hero-desc { color: rgba(255,255,255,0.85); font-size: 1.05rem; max-width: 480px; margin-bottom: 2rem; }
 .breadcrumb {
   display: flex;
