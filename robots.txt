@@ -1,7 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://[YOUR-DOMAIN]/sitemap.xml
-
-# Sai Nirmaan Architects — Visakhapatnam
-# Replace [YOUR-DOMAIN] with your actual domain before going live
+Sitemap: https://sainirmaanarchitects.com/sitemap.xml
