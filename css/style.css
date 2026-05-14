@@ -1330,8 +1330,8 @@ textarea.form-control { min-height: 120px; resize: vertical; }
 .intro-two-col { display: grid; grid-template-columns: 1fr 1.4fr; gap: 5rem; align-items: start; }
 @media (max-width: 860px) { .intro-two-col { grid-template-columns: 1fr; gap: 2rem; } }
 
-/* Process step on dark bg */
-.process-step h4 { font-family: var(--serif); font-size: 1.1rem; color: var(--white); margin-bottom: 0.75rem; }
+/* Process step */
+.process-step h4 { font-family: var(--serif); font-size: 1.1rem; color: var(--ink); margin-bottom: 0.75rem; }
 
 /* ============================================================
    v2.1 IMPROVEMENTS
