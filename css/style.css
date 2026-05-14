@@ -63,7 +63,7 @@ h4 { font-size: 1rem; font-weight: 600; font-family: var(--sans); letter-spacing
 
 p { color: var(--ink-soft); line-height: 1.8; }
 
-.eyebrow {
+.eyebrow, .section-label {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
@@ -74,7 +74,7 @@ p { color: var(--ink-soft); line-height: 1.8; }
   color: var(--orange);
   margin-bottom: 1.25rem;
 }
-.eyebrow::before {
+.eyebrow::before, .section-label::before {
   content: '';
   display: block;
   width: 2rem;
@@ -746,7 +746,7 @@ a.service-row { display: grid; }
 .bcard-meta span:not(:last-child)::after { content: '·'; margin-left: 0.75rem; }
 
 /* ---------- CTA STRIP ---------- */
-.cta-strip {
+.cta-strip, .cta-band {
   background: var(--ink);
   padding: clamp(5rem, 9vw, 8rem) 0;
 }
@@ -1186,12 +1186,7 @@ div > .filter-btn { font-family: var(--sans); }
 .section-header { max-width: 600px; margin: 0 auto 4rem; text-align: center; }
 .section-header h2 { margin-bottom: 1rem; }
 .section-header p { color: var(--ink-soft); }
-.section-label {
-  display: inline-flex; align-items: center; gap: 0.75rem;
-  font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
-  color: var(--orange); margin-bottom: 1.25rem;
-}
-.section-label::before { content: ''; display: block; width: 2rem; height: 1px; background: var(--orange); }
+/* .section-label shares rules with .eyebrow above */
 
 /* Page hero content alias */
 .page-hero-content.container {
@@ -1206,8 +1201,8 @@ div > .filter-btn { font-family: var(--sans); }
 .btn.btn-outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.4); }
 .btn.btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.08); }
 
-/* CTA band alias */
-.cta-band { background: var(--ink); padding: clamp(5rem, 9vw, 8rem) 0; text-align: center; }
+/* CTA band alias — background/padding shared with .cta-strip above */
+.cta-band { text-align: center; }
 .cta-band h2 { color: var(--white); margin-bottom: 1rem; }
 .cta-band p { color: rgba(255,255,255,0.5); margin-bottom: 2.5rem; }
 .cta-band .btn.btn-outline { border-color: rgba(255,255,255,0.35); }
